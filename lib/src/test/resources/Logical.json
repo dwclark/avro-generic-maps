@@ -1,0 +1,9 @@
+{
+    "type" : "record",
+    "namespace" : "com.github.dwclark",
+    "name" : "Logical",
+    "fields" : [
+	{ "name": "inMillis" , "type": { "type": "long", "logicalType": "timestamp-millis"} },
+	{ "name": "id" , "type": {"type": "string", "logicalType": "uuid" } }
+    ]
+}

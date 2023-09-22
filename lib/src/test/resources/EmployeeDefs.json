@@ -1,0 +1,13 @@
+{
+    "type" : "record",
+    "namespace" : "com.github.dwclark",
+    "name" : "EmployeeDefs",
+    "fields" : [
+	{ "name": "name" , "type": "string" },
+	{ "name": "age" , "type": ["null", "int"] },
+	{ "name": "weight", "type": "long" },
+	{ "name": "latitude", "type": "float" },
+	{ "name": "income", "type": "double" },
+	{ "name": "stupid", "type": "boolean", "default": true }
+    ]
+}

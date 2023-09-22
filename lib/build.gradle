@@ -1,0 +1,21 @@
+plugins {
+    id 'groovy'
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.groovy:groovy-all:4.0.15'
+    implementation 'org.apache.avro:avro:1.11.1'
+}
+
+testing {
+    suites {
+        test {
+            useSpock('2.4-M1-groovy-4.0')
+        }
+    }
+}

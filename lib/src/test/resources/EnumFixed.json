@@ -1,0 +1,9 @@
+{
+    "type" : "record",
+    "namespace" : "com.github.dwclark",
+    "name" : "EnumFixed",
+    "fields" : [
+	{ "name": "suit" , "type": { "type": "enum", "name": "Suit", "symbols": ["SPADES", "HEARTS", "DIAMONDS", "CLUBS"] } },
+	{ "name": "md5" , "type": { "type": "fixed", "name": "MD5", "size": 16 } }
+    ]
+}

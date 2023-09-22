@@ -1,0 +1,24 @@
+{
+    "type" : "record",
+    "namespace" : "com.github.dwclark",
+    "name" : "Stuff",
+    "fields" : [
+	{ "name": "numbers", "type": { "type": "array", "items": "long"} },
+	{ "name": "names" ,
+	  "type": ["null",
+		   { "type": "array",
+		     "items": {
+			 "type": "record",
+			 "name": "Name",
+			 "fields": [
+			     {"name": "first", "type": "string"},
+			     {"name": "last", "type": "string"}
+			 ]
+		     }
+		   }],
+	  "default": null
+	},
+	
+	{ "name": "namesToAges", "type": { "type": "map", "values": "int" } }
+    ]
+}
